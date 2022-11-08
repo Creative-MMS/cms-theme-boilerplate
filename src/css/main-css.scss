@@ -1,0 +1,44 @@
+@import 'modules/card';
+
+/* Theme base styles */
+
+/* Tools
+Any animations, or functions used throughout the project.
+Note: _macros.css needs to be imported into each stylesheet where macros are used and not included here
+*/
+
+/* Generic
+This is where reset, normalize & box-sizing styles go.
+*/
+@import 'modules/card';
+@import 'generic/reset';
+@import 'generic/normalize';
+
+/* Objects
+Non-cosmetic design patterns including grid and layout classes)
+*/
+
+@import 'objects/layout';
+@import 'objects/containers-dnd';
+
+/* Elements
+Base HMTL elements are styled in this section (<body<, <h1>, <a>, <p>, <button> etc.)
+*/
+
+@import 'elements/typography';
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/tables';
+
+/* Components
+Specific pieces of UI that are stylized. Typically used for global partial styling
+*/
+
+@import 'components/header';
+@import 'components/default-modules';
+
+/* Utilities
+Helper classes with ability to override anything that comes before it
+*/
+
+@import 'utilities/helper';

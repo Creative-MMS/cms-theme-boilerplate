@@ -1,28 +1,44 @@
 {
-  "name": "@hubspot/cms-theme-boilerplate",
+  "name": "CreativeHS",
   "version": "3.6.0",
   "description": "Boilerplate project for building websites on the HubSpot CMS",
   "repository": {
     "type": "git",
     "url": "git@git.hubteam.com:HubSpot/cms-theme-boilerplate.git"
   },
-  "author": "",
+  "author": "Creative",
+  "main": "src/index.html",
   "license": "Apache-2.0",
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "copyfiles": "^2.3.0",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.2",
+    "sass": "^1.26.10",
     "eslint": "^7.9.0",
     "js-yaml": "^3.14.0",
-    "postcss-cli": "^7.0.0",
     "prettier": "^2.1.2"
   },
   "scripts": {
     "autoprefixer": "postcss src/css/**/*.css src/modules/**/*.css !src/**/_layout.css !src/**/_normalize.css !src/**/_reset.css !src/**/_macros.css !src/**/main.css !src/**/theme-overrides.css --use autoprefixer --replace --no-map",
     "eslint": "eslint src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
-    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'",
+    "scss": "sass src/css",
+    "css": "postcss src/css/*.css -u autoprefixer cssnano -r -m",
+    "watch:sass": "sass --watch src/css",
+    "watch:js": "onchange 'src/js/*.js'",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server src --files src --port 1337",
+    "start": "npm-run-all scss --parallel watch serve",
+    "build": "npm-run-all scss css"
   },
   "browserslist": [
     "defaults",
-    "IE 11"
+    "IE 11",
+    "last 2 versions"
   ]
 }

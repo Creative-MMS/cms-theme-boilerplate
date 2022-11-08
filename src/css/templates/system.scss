@@ -1,4 +1,5 @@
 /* Error pages */
+
 .error-page {
   padding: 10rem 0;
   position: relative;
@@ -23,7 +24,9 @@
     font-size: 20rem;
   }
 }
+
 /* System pages */
+
 .systems-page {
   margin: 0 auto;
   max-width: 700px;
@@ -55,12 +58,13 @@
   max-width: 100%;
 }
 
-.systems-page form input[type=submit] {
+.systems-page form input[type='submit'] {
   margin: 0.7rem 0;
   display: block;
 }
 
 /* Search pages */
+
 .hs-search-results__title {
   font-size: 1.25rem;
   margin-bottom: 0.35rem;
@@ -76,6 +80,7 @@
 }
 
 /* Password prompt */
+
 .password-prompt input[type=password] {
   height: auto !important;
   margin-bottom: 1.4rem;
@@ -93,6 +98,7 @@
 }
 
 /* Backup unsubscribe */
+
 .backup-unsubscribe #email-prefs-form div {
   padding-bottom: 0 !important;
 }
@@ -104,6 +110,7 @@
 }
 
 /* Subscription preferences */
+
 #email-prefs-form .item.disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -114,11 +121,13 @@
 }
 
 /* Membership pages */
-#hs-membership-form a[class*=show-password] {
+
+#hs-membership-form a[class*='show-password'] {
   font-size: 0.75rem;
 }
 
 /* Input error messages */
+
 .form-input-validation-message ul.hs-error-msgs {
   padding-left: 0;
   margin: 0;
@@ -127,5 +136,3 @@
 .form-input-validation-message ul.hs-error-msgs li {
   margin: 0;
 }
-
-/*# sourceMappingURL=system.css.map */
