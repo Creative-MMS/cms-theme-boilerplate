@@ -1,10 +1,38 @@
 @charset "UTF-8";
-.card .card__title {
+.card.card-v2 {
+  position: relative;
+  display: block;
+  padding: 0 40px 80px;
+  background-color: #122645;
+  text-align: center;
+  max-width: 500px;
+}
+.card.card-v2 .card__title {
   font-size: 20px;
 }
-.card .card__content {
-  font-size: 16px;
+.card.card-v2 .card__img-container {
+  position: relative;
+  display: inline-block;
+  margin-top: -50px;
+}
+.card.card-v2 .card__img-container .card__img-bg {
+  background-color: #E93572;
+  width: 100%;
+  height: auto;
+}
+.card.card-v2 .card__content {
+  display: block;
+  font-family: "Alianza Slab";
+  font-size: 28px;
   font-weight: 600;
+  color: #fff;
+}
+.card.card-v2 .card__star {
+  position: absolute;
+  bottom: -70px;
+  right: 60px;
+  width: 78px;
+  height: 88px;
 }
 
 /* Theme base styles */
@@ -15,12 +43,40 @@ Note: _macros.css needs to be imported into each stylesheet where macros are use
 /* Generic
 This is where reset, normalize & box-sizing styles go.
 */
-.card .card__title {
+.card.card-v2 {
+  position: relative;
+  display: block;
+  padding: 0 40px 80px;
+  background-color: #122645;
+  text-align: center;
+  max-width: 500px;
+}
+.card.card-v2 .card__title {
   font-size: 20px;
 }
-.card .card__content {
-  font-size: 16px;
+.card.card-v2 .card__img-container {
+  position: relative;
+  display: inline-block;
+  margin-top: -50px;
+}
+.card.card-v2 .card__img-container .card__img-bg {
+  background-color: #E93572;
+  width: 100%;
+  height: auto;
+}
+.card.card-v2 .card__content {
+  display: block;
+  font-family: "Alianza Slab";
+  font-size: 28px;
   font-weight: 600;
+  color: #fff;
+}
+.card.card-v2 .card__star {
+  position: absolute;
+  bottom: -70px;
+  right: 60px;
+  width: 78px;
+  height: 88px;
 }
 
 *, *:before, *:after {
